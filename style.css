@@ -1,0 +1,96 @@
+* {
+    transition: all 0.2s ease-in-out;
+}
+
+body {
+    display: flex;
+    background: url("./bg2.jpg");
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.card {
+    background: transparent;
+    border-radius: 30px;
+    height: 85vh;
+    width: 80%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    overflow: hidden;
+    color: rgb(102, 98, 98);
+}
+
+@media only screen and (max-width: 300px) {
+    .card {
+        height: auto;
+        flex-direction: column;
+    }
+    .birthday {
+        width: 30px;
+        height: 30px;
+        display: block;
+        clear: both;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .card {
+        flex-direction: row-reverse;
+    }
+    .card img.birthday {
+        width: 60%;
+        max-width: 50vw;
+        max-height: unset;
+        border-radius: 30px;
+    }
+}
+
+@media only screen and (max-height: 640px) {
+    .card {
+        flex-direction: row-reverse;
+    }
+    .card img.birthday {
+        width: 100%;
+        max-width: 50vw;
+        max-height: unset;
+    }
+}
+
+img.birthday {
+    max-height: 40vh;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.text {
+    padding: 3em;
+}
+
+.text h1 {
+    font-family: cursive;
+    font-size: 40px;
+}
+
+.space {
+    height: 100px;
+}
+
+.credit a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.credit {
+    margin-top: 10px;
+    text-align: center;
+}
